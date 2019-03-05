@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top" />
+
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="24dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/dividir"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="/"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit" />
+
+    <Button
+        android:id="@+id/multiplicar"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="*"
+        app:layout_constraintBottom_toBottomOf="@+id/dividir"
+        app:layout_constraintStart_toEndOf="@+id/dividir" />
+
+    <Button
+        android:id="@+id/limpiar"
+        android:layout_width="127dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="X"
+        app:layout_constraintBottom_toBottomOf="@+id/multiplicar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/multiplicar" />
+
+    <Button
+        android:id="@+id/siete"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dividir" />
+
+    <Button
+        android:id="@+id/ocho"
+        android:layout_width="93dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="8"
+        app:layout_constraintBottom_toBottomOf="@+id/siete"
+        app:layout_constraintStart_toEndOf="@+id/siete" />
+
+    <Button
+        android:id="@+id/nueve"
+        android:layout_width="93dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="9"
+        app:layout_constraintBottom_toBottomOf="@+id/ocho"
+        app:layout_constraintStart_toEndOf="@+id/ocho" />
+
+    <Button
+        android:id="@+id/resta"
+        android:layout_width="93dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="@+id/seis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/seis" />
+
+    <Button
+        android:id="@+id/cuatro"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/siete" />
+
+    <Button
+        android:id="@+id/cinco"
+        android:layout_width="93dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="5"
+        app:layout_constraintBottom_toBottomOf="@+id/cuatro"
+        app:layout_constraintStart_toEndOf="@+id/cuatro" />
+
+    <Button
+        android:id="@+id/seis"
+        android:layout_width="93dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="6"
+        app:layout_constraintBottom_toBottomOf="@+id/cinco"
+        app:layout_constraintStart_toEndOf="@+id/cinco" />
+
+    <Button
+        android:id="@+id/suma"
+        android:layout_width="93dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="@+id/nueve"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nueve" />
+
+    <Button
+        android:id="@+id/uno"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cuatro" />
+
+    <Button
+        android:id="@+id/dos"
+        android:layout_width="93dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="2"
+        app:layout_constraintBottom_toBottomOf="@+id/uno"
+        app:layout_constraintStart_toEndOf="@+id/uno" />
+
+    <Button
+        android:id="@+id/tres"
+        android:layout_width="93dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="3"
+        app:layout_constraintBottom_toBottomOf="@+id/dos"
+        app:layout_constraintStart_toEndOf="@+id/dos" />
+
+    <Button
+        android:id="@+id/cero"
+        android:layout_width="162dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uno" />
+
+    <Button
+        android:id="@+id/punto"
+        android:layout_width="126dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:text="."
+        app:layout_constraintBottom_toBottomOf="@+id/cero"
+        app:layout_constraintStart_toEndOf="@+id/cero" />
+
+    <Button
+        android:id="@+id/igual"
+        android:layout_width="93dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="="
+        app:layout_constraintBottom_toBottomOf="@+id/punto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/punto" />
+
+</android.support.constraint.ConstraintLayout>
