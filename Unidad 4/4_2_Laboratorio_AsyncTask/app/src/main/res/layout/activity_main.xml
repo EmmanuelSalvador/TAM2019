@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mx.edu.ittepic.u4_lab1_asynctask.MainActivity">
+
+
+    <EditText
+        android:id="@+id/edtNumero"
+        android:layout_width="325dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Ingrese un número de la serie fibonacci"
+        android:inputType="numberSigned"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="32dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/edtNumero"
+        app:layout_constraintStart_toStartOf="@+id/edtNumero"
+        app:layout_constraintTop_toBottomOf="@+id/edtNumero" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="139dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="52dp"
+        android:text="CALCULAR"
+        app:layout_constraintEnd_toEndOf="@+id/txtResultado"
+        app:layout_constraintStart_toStartOf="@+id/txtResultado"
+        app:layout_constraintTop_toBottomOf="@+id/txtResultado" />
+</android.support.constraint.ConstraintLayout>
