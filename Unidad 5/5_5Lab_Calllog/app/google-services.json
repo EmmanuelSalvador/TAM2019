@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "865433978069",
+    "firebase_url": "https://llamada-7cb46.firebaseio.com",
+    "project_id": "llamada-7cb46",
+    "storage_bucket": "llamada-7cb46.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:865433978069:android:ceb594ff84e85496",
+        "android_client_info": {
+          "package_name": "mx.edu.ittepic.a5_5_lab_call_log"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "865433978069-n5ac1cs532hqaqmc0hmeu65cieg8as29.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQa8x9F8kFTcq-7Lu4fIWAicIVD-E-68w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "865433978069-n5ac1cs532hqaqmc0hmeu65cieg8as29.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
